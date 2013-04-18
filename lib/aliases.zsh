@@ -16,10 +16,10 @@ alias please='sudo'
 alias history='fc -l 1'
 
 # List direcory contents
-alias lsa='ls -lah'
-alias l='ls -lA1'
-alias ll='ls -l'
-alias la='ls -lA'
+alias lsa='ls -lah --group-directories-first'
+alias l='ls -lA1 --group-directories-first'
+alias ll='ls -l --group-directories-first'
+alias la='ls -lA --group-directories-first'
 alias sl=ls # often screw this up
 
 alias afind='ack-grep -il'
