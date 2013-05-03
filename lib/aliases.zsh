@@ -20,7 +20,6 @@ alias lsa='ls -lah --group-directories-first'
 alias l='ls -lA1 --group-directories-first'
 alias ll='ls -l --group-directories-first'
 alias la='ls -lA --group-directories-first'
-alias sl=ls # often screw this up
 
 alias afind='ack-grep -il'
 
