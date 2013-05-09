@@ -14,7 +14,7 @@ alias md='mkdir'
 alias nh='nohup 2>/dev/null'
 if whence detach > /dev/null; then
   alias det='detach'
-else if whence setsid; then
+elif whence setsid; then
   alias det='setsid 2>/dev/null'
 else
   alias det='nohup 2>/dev/null' 
@@ -44,3 +44,4 @@ fancy-ctrl-z () {
 
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
+
