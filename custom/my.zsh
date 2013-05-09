@@ -11,6 +11,14 @@ alias zc='z -c'
 # Aliases
 alias ll='ls --color=auto -al --group-directories-first'
 alias md='mkdir'
+alias nh='nohup 2>/dev/null'
+if whence detach > /dev/null; then
+  alias det='detach'
+else if whence setsid; then
+  alias det='setsid 2>/dev/null'
+else
+  alias det='nohup 2>/dev/null' 
+fi
 
 lm() {
   ls --color -al --group-directories-first $* | less -R
